@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #222; */
+  /* color: whitesmoke; */
+  background-color: #111;
+  font-family: roboto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fadeIn{
+  animation: fadeIn 1.5s linear forwards;
+}
+
+.fadeOut{
+  /* animation: fadeOut 1.5s linear forwards; */
+   /* display: none;
+   font */
+   /* font-size: 40rem
+   ; */
+   visibility: hidden;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  from{
+    /* opacity: 1; */
+    visibility: visible;
+  }
+  to{
+    /* opacity: 0;
+    vis */
+    visibility: hidden;
+  }
+}
+
+/* STYLING APP COMPONENT */
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  transition: all 0.2s ease-in-out;
+}
+
+.studentList{
+  color: #aaa;
+  width: 50vw;
+  transition: all 0.2s linear;
+  display: table;
+  border-top: 0.1rem solid crimson;
+  border-radius: 0.5rem;
+  padding: 5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  /* transition: all 0.5s linear; */
+}
+
+.studentList div{
+  transition: all 0.2s ease-in-out;
+  display: table-row;
+}
+
+.studentList p{
+  font-size: 1.2rem;
+  display: table-cell;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.studentList div:hover{
+  color: crimson;
+}
+
+.studentList button{
+  background-color: #111;
+  outline: none;
+  border: none;
+  color: #aaa;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: crimson;
+  font-size: 1.5rem;
+  /* box-shadow: 0.05rem 0 0.05rem 0.1rem red; */
+}
+
+.studentList button:hover{
+  transform: scale(1.5);
+}
+
+
+.studentList > div{
+  display: table-row;
+  justify-content: space-between;
+  animation: fadeIn 1.5s linear forwards;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* STYLING THE FORM */
+form{
+  display: flex;
+  flex-flow: column;
+  background-color: #111;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  border-left: 0.1rem solid crimson;
+}
+
+form input{
+  background-color: #222;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  width: 20rem;
+  font-family: roboto;
+  border: 0.1rem solid transparent;
+  transition: all 0.2s linear;
+  border-radius: 0.4rem;
+ font-size: 1rem;
+}
+
+form input:focus{
+  /* border-color: crimson; */
+  /* box-shadow: 0.05rem 0 0.5rem 0.05rem indigo; */
+  box-shadow: 0.05rem 0 0.5rem 0.05rem crimson;
+}
+
+form button{
+  background-color: crimson;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: roboto;
+  font-size: 1.2rem;
+}
+
+form button:hover{
+  background-color: indigo;
+ 
+}
+
